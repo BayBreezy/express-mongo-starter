@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Welcome</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="wlcApp">
+			<v-app>
+				<div>
+					<v-img
+						height="100vh"
+						src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+					>
+						<v-container class="fill-height">
+							<v-row justify="center" align="center">
+								<v-col cols="12" md="5" class="text-center">
+									<h2>{{message || "Welcome Aboard"}}</h2>
+									<br />
+									<v-btn
+										color="primary"
+										width="150"
+										height="45"
+										class="text-capitalize"
+										>Awesome</v-btn
+									>
+								</v-col>
+							</v-row>
+						</v-container>
+					</v-img>
+				</div>
+			</v-app>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
